@@ -1,0 +1,65 @@
+
+# Use Xft?
+use_xft yes
+xftfont nu:size=8
+
+# Update interval in seconds
+update_interval 1
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Create own window instead of using desktop (required in nautilus)
+own_window  yes
+own_window_transparent no
+own_window_type desktop
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager 
+
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+
+min_size 300 600
+
+# Draw shades?
+draw_shades no
+
+# Draw outlines?
+draw_outline no
+
+# Draw borders around text
+draw_borders yes
+
+# Stippled borders?
+stippled_borders 0
+
+border_inner_margin 5
+border_width 1
+
+default_color 303030
+own_window_colour 262524
+alignment top_left
+
+gap_x 450
+gap_y 400
+
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# number of net samples to average
+# set to 1 to disable averaging
+net_avg_samples 2
+
+TEXT
+${alignc}${color 5c5c5c}Did you know...
+
+${execi 60 /home/gills/scripts/dyk.py }
