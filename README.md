@@ -1,4 +1,4 @@
-![screenshot]["/screenshot.png"]
+![screenshot]("/screenshot.png")
 
 ## Summary:
 These scripts fetch the did you know and news sections from wikipedia. They're made to be used with conky, so I've also included my conkyrc files and a script for wifi signal strength.
